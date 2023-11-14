@@ -1,5 +1,20 @@
+import Link from "next/link";
+import { Fragment } from "react";
+
 function NewsPage() {
-  return <h1>News page</h1>;
+  return (
+    <Fragment>
+      <h1>News page</h1>
+      <ul>
+        <li>
+          <Link href="/news/next-js-a-great-framefork">
+            NextJS is a greate Framework
+          </Link>
+        </li>
+        <li>Something else</li>
+      </ul>
+    </Fragment>
+  );
 }
 
 export default NewsPage;
